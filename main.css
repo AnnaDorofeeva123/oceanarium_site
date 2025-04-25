@@ -85,7 +85,9 @@ img {
 }
 
 .hero {
-  background: url('banner.jpg') no-repeat center center/cover;
+  background-image: url('banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
   position: relative;
   display: flex;
