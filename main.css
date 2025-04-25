@@ -237,14 +237,6 @@ img {
   margin-top: 30px;
 }
 
-.animal-card {
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .animal-card__img {
   width: 100%;
   height: 180px;
@@ -268,6 +260,7 @@ img {
 }
 
 .animal-card {
+  text-align: center;
   min-width: 200px;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -289,9 +282,6 @@ img {
 .animals__scroll::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
-
-
 
 .section__button {
   text-align: center;
@@ -340,21 +330,3 @@ img {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .nav__list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .header__container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .exhibits__list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero {
-    height: auto;
-    padding: 40px 20px;
-  }
-}
