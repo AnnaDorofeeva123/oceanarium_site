@@ -238,7 +238,9 @@ img {
 }
 
 .animal-card {
-  text-align: center;
+  min-width: 200px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -257,6 +259,24 @@ img {
   background-color: #f0f9ff;
   color: #022e40;
 }
+
+.animals__scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.animals__scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.animals__scroll::-webkit-scrollbar-thumb {
+  background-color: #00b4d8;
+  border-radius: 4px;
+}
+
 
 .section__button {
   text-align: center;
