@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Добро пожаловать в океанариум!" />
-  <link rel="stylesheet" href="styles/main.css" />
   <title>Океанариум</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="page">
+
+<body>
   <header class="header">
-    <div class="header__container">
+    <div class="container header__container">
       <img src="images/logo.png" alt="Логотип океанариума" class="header__logo" />
-      <nav class="header__nav nav">
+      <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Экспозиции</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#exhibits" class="nav__link">Экспозиции</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
+      <a href="#tickets" class="button header__button">Купить билеты</a>
     </div>
   </header>
 
-  <main class="main">
-    <section class="banner">
-      <img src="images/banner.jpg" alt="Океанское дно" class="banner__image" />
-      <div class="banner__text">
-        <h1 class="banner__title">Добро пожаловать в океанариум</h1>
-        <p class="banner__subtitle">Погрузитесь в мир морских глубин</p>
+  <main>
+    <section class="hero">
+      <div class="hero__overlay">
+        <h1 class="hero__title">Погрузитесь в мир морских глубин</h1>
+        <p class="hero__subtitle">Уникальные морские обитатели ждут вас</p>
+        <a href="#about" class="button hero__button">Узнать больше</a>
       </div>
     </section>
 
-    <section class="features">
-      <div class="features__item">
-        <h2 class="features__title">Уникальные экспозиции</h2>
-        <p class="features__text">Более 300 видов морских обитателей</p>
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section__title">О нас</h2>
+        <p class="about__text">
+          Наш океанариум — это место, где вы можете познакомиться с удивительным подводным миром. Мы предлагаем уникальные экспозиции, образовательные программы и развлечения для всей семьи.
+        </p>
       </div>
-      <div class="features__item">
-        <h2 class="features__title">Экскурсии и шоу</h2>
-        <p class="features__text">Каждый день — новое открытие</p>
+    </section>
+
+    <section id="exhibits" class="exhibits section">
+      <div class="container">
+        <h2 class="section__title">Экспозиции</h2>
+        <div class="exhibits__list">
+          <div class="exhibit">
+            <img src="images/sharks.jpg" alt="Акулы" class="exhibit__img" />
+            <h3 class="exhibit__title">Мир акул</h3>
+            <p class="exhibit__desc">Познакомьтесь с хищниками морей лицом к лицу.</p>
+          </div>
+          <div class="exhibit">
+            <img src="images/coral.jpg" alt="Коралловый риф" class="exhibit__img" />
+            <h3 class="exhibit__title">Коралловый риф</h3>
+            <p class="exhibit__desc">Яркие и живописные подводные ландшафты.</p>
+          </div>
+          <div class="exhibit">
+            <img src="images/penguins.jpg" alt="Пингвины" class="exhibit__img" />
+            <h3 class="exhibit__title">Пингвинарий</h3>
+            <p class="exhibit__desc">Наблюдайте за жизнью обитателей Антарктики.</p>
+          </div>
+        </div>
       </div>
-      <div class="features__item">
-        <h2 class="features__title">Семейный отдых</h2>
-        <p class="features__text">Интересно детям и взрослым</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p>Адрес: г. Приморск, ул. Морская, 1</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+        <p>Email: info@oceanarium.ru</p>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUZTY3t" width="100%" height="300" frameborder="0"></iframe>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
-      <p class="footer__text">© 2025 Океанариум. Все права защищены.</p>
+    <div class="container footer__container">
+      <p class="footer__text">&copy; 2025 Океанариум. Все права защищены.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__link">VK</a>
+        <a href="#" class="footer__link">Instagram</a>
+      </div>
     </div>
   </footer>
 </body>
+
 </html>
+
