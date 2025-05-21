@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Покупка билетов | Океанариум</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Океанариум</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="exhibitions.html">Экспозиции</a></li>
+        <li><a href="gallery.html">Галерея животных</a></li>
+        <li><a href="tickets.html" class="active">Билеты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ticket-section">
+      <h2>Покупка билетов</h2>
+      <form action="#" method="post" class="ticket-form">
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="date">Дата посещения:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="ticket-type">Тип билета:</label>
+        <select id="ticket-type" name="ticket-type">
+          <option value="adult">Взрослый — 800₽</option>
+          <option value="child">Детский — 400₽</option>
+          <option value="student">Студенческий — 500₽</option>
+        </select>
+
+        <label for="quantity">Количество билетов:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required />
+
+        <button type="submit">Забронировать</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Океанариум. Все права защищены.</p>
+  </footer>
+</body>
+</html>
