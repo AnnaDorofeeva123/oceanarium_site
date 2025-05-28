@@ -3,52 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Покупка билетов | Океанариум</title>
-  <link href="main.css" rel="stylesheet" type="text/css">
+  <title>Купить билеты | Океанариум</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #0077b6;
+      padding: 1rem 0;
+      color: white;
+    }
+
+    .header__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header__logo {
+      height: 50px;
+    }
+
+    .nav__list {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav__link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button {
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+    }
+
+    .section__title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .ticket-form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .ticket-form label {
+      font-weight: bold;
+    }
+
+    .ticket-form__input,
+    .ticket-form__select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .ticket-form__button {
+      background-color: #023e8a;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .footer {
+      background-color: #03045e;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .footer__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .footer__link {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav__list {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Океанариум</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="exhibitions.html">Экспозиции</a></li>
-        <li><a href="gallery.html">Галерея животных</a></li>
-        <li><a href="tickets.html" class="active">Билеты</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__container">
+      <img src="logo.png" alt="Логотип океанариума" class="header__logo" />
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="index.html#exhibits" class="nav__link">Экспозиции</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tickets.html" class="button header__button">Купить билеты</a>
+    </div>
   </header>
 
   <main>
-    <section class="ticket-section">
-      <h2>Покупка билетов</h2>
-      <form action="#" method="post" class="ticket-form">
-        <label for="fullname">ФИО:</label>
-        <input type="text" id="fullname" name="fullname" required />
-
-        <label for="email">Электронная почта:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="date">Дата посещения:</label>
-        <input type="date" id="date" name="date" required />
-
-        <label for="ticket-type">Тип билета:</label>
-        <select id="ticket-type" name="ticket-type">
-          <option value="adult">Взрослый — 800₽</option>
-          <option value="child">Детский — 400₽</option>
-          <option value="student">Студенческий — 500₽</option>
+    <section class="section">
+      <h1 class="section__title">Покупка билетов</h1>
+      <form class="ticket-form">
+        <label for="ticket-type">Выберите билет:</label>
+        <select id="ticket-type" name="ticket-type" class="ticket-form__select">
+          <option value="general">Входной билет — 800 ₽</option>
+          <option value="night">Ночное погружение — 1200 ₽</option>
+          <option value="sharks">Кормление акул — 1000 ₽</option>
+          <option value="kids">Детская экскурсия — 600 ₽</option>
         </select>
 
-        <label for="quantity">Количество билетов:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10" required />
+        <label for="ticket-count">Количество билетов:</label>
+        <input type="number" id="ticket-count" name="ticket-count" min="1" max="10" value="1" class="ticket-form__input" />
 
-        <button type="submit">Забронировать</button>
+        <label for="date">Дата посещения:</label>
+        <input type="date" id="date" name="date" class="ticket-form__input" />
+
+        <button type="submit" class="button ticket-form__button">Оформить заказ</button>
       </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Океанариум. Все права защищены.</p>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">&copy; 2025 Океанариум. Все права защищены.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__link">VK</a>
+        <a href="#" class="footer__link">Instagram</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
