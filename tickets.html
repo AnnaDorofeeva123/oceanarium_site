@@ -29,6 +29,8 @@
       <h1 class="ticket_section__title">Покупка билетов</h1>
       <form class="ticket-form">
         
+        <p><strong>Выберите нужное количество билетов:</strong></p>
+
         <label for="count-general">Входной билет — 800 ₽</label><br />
         <input type="number" id="count-general" name="count-general" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
 
@@ -41,9 +43,8 @@
         <label for="count-kids">Детская экскурсия — 600 ₽</label><br />
         <input type="number" id="count-kids" name="count-kids" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
 
-
-        <label for="date">Дата посещения:</label>
-        <input type="date" id="date" name="date" class="ticket-form__input" required />
+        <label for="date">Дата посещения:</label><br />
+        <input type="date" id="date" name="date" class="ticket-form__input" required /><br /><br />
 
         <button type="submit" class="button ticket-form__button">Оформить заказ</button>
       </form>
