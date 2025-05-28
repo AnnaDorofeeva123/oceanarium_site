@@ -28,29 +28,37 @@
     <div class="container">
       <h1 class="ticket_section__title">Покупка билетов</h1>
       <form class="ticket-form">
-        
         <p><strong>Выберите нужное количество билетов:</strong></p>
 
-        <label for="count-general">Входной билет — 800 ₽</label><br />
-        <input type="number" id="count-general" name="count-general" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
+        <div class="ticket-form__row">
+          <label for="count-general">Входной билет — 800 ₽</label>
+          <input type="number" id="count-general" name="count-general" min="0" max="10" value="0" class="ticket-form__input" />
+        </div>
 
-        <label for="count-night">Ночное погружение — 1200 ₽</label><br />
-        <input type="number" id="count-night" name="count-night" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
+        <div class="ticket-form__row">
+          <label for="count-night">Ночное погружение — 1200 ₽</label>
+          <input type="number" id="count-night" name="count-night" min="0" max="10" value="0" class="ticket-form__input" />
+        </div>
 
-        <label for="count-sharks">Кормление акул — 1000 ₽</label><br />
-        <input type="number" id="count-sharks" name="count-sharks" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
+        <div class="ticket-form__row">
+          <label for="count-sharks">Кормление акул — 1000 ₽</label>
+          <input type="number" id="count-sharks" name="count-sharks" min="0" max="10" value="0" class="ticket-form__input" />
+        </div>
 
-        <label for="count-kids">Детская экскурсия — 600 ₽</label><br />
-        <input type="number" id="count-kids" name="count-kids" min="0" max="10" value="0" class="ticket-form__input" /><br /><br />
+        <div class="ticket-form__row">
+          <label for="count-kids">Детская экскурсия — 600 ₽</label>
+          <input type="number" id="count-kids" name="count-kids" min="0" max="10" value="0" class="ticket-form__input" />
+        </div>
 
-        <label for="date">Дата посещения:</label><br />
-        <input type="date" id="date" name="date" class="ticket-form__input" required /><br /><br />
+        <label for="date">Дата посещения:</label>
+        <input type="date" id="date" name="date" class="ticket-form__input" required />
 
         <button type="submit" class="button ticket-form__button">Оформить заказ</button>
       </form>
     </div>
   </section>
 </main>
+
 
 
 
