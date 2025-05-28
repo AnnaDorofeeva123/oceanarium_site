@@ -346,6 +346,12 @@ img {
   cursor: pointer;
 }
 
+.ticket-form__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
 .footer {
   background-color: #022e40;
   color: white;
