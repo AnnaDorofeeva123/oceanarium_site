@@ -22,28 +22,33 @@
       <a href="tickets.html" class="button header__button">Купить билеты</a>
     </div>
   </header>
-  <main>
+  
+   <main>
     <section class="ticket_section">
-      <h1 class="ticket_section__title">Покупка билетов</h1>
-      <form class="ticket-form">
-        <label for="ticket-type">Выберите билет:</label>
-        <select id="ticket-type" name="ticket-type" class="ticket-form__select">
-          <option value="general">Входной билет — 800 ₽</option>
-          <option value="night">Ночное погружение — 1200 ₽</option>
-          <option value="sharks">Кормление акул — 1000 ₽</option>
-          <option value="kids">Детская экскурсия — 600 ₽</option>
-        </select>
-
-        <label for="ticket-count">Количество билетов:</label>
-        <input type="number" id="ticket-count" name="ticket-count" min="1" max="10" value="1" class="ticket-form__input" />
-
-        <label for="date">Дата посещения:</label>
-        <input type="date" id="date" name="date" class="ticket-form__input" />
-
-        <button type="submit" class="button ticket-form__button">Оформить заказ</button>
-      </form>
+      <div class="container">
+        <h1 class="ticket_section__title">Покупка билетов</h1>
+        <form class="ticket-form">
+          <label for="ticket-type">Выберите билет:</label>
+          <select id="ticket-type" name="ticket-type" class="ticket-form__select">
+            <option value="general">Входной билет — 800 ₽</option>
+            <option value="night">Ночное погружение — 1200 ₽</option>
+            <option value="sharks">Кормление акул — 1000 ₽</option>
+            <option value="kids">Детская экскурсия — 600 ₽</option>
+          </select>
+  
+          <label for="ticket-count">Количество билетов:</label>
+          <input type="number" id="ticket-count" name="ticket-count" min="1" max="10" value="1" class="ticket-form__input" />
+  
+          <label for="date">Дата посещения:</label>
+          <input type="date" id="date" name="date" class="ticket-form__input" />
+  
+          <button type="submit" class="button ticket-form__button">Оформить заказ</button>
+        </form>
+      </div>
     </section>
   </main>
+
+
 
   <footer class="footer">
     <div class="footer__container">
