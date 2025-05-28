@@ -23,59 +23,36 @@
     </div>
   </header>
   
-   <main>
+<main>
   <section class="ticket_section">
     <div class="container">
       <h1 class="ticket_section__title">Покупка билетов</h1>
       <form class="ticket-form">
         <fieldset>
-          <legend>Выберите билеты:</legend>
+          <legend>Укажите количество билетов:</legend>
 
-          <label>
-            <input type="checkbox" name="ticket-general" />
-            Входной билет — 800 ₽
-          </label>
-          <label>
-            Кол-во:
-            <input type="number" name="count-general" min="1" max="10" value="1" />
-          </label><br>
+          <label for="count-general">Входной билет — 800 ₽</label>
+          <input type="number" id="count-general" name="count-general" min="0" max="10" value="0" />
 
-          <label>
-            <input type="checkbox" name="ticket-night" />
-            Ночное погружение — 1200 ₽
-          </label>
-          <label>
-            Кол-во:
-            <input type="number" name="count-night" min="1" max="10" value="1" />
-          </label><br>
+          <label for="count-night">Ночное погружение — 1200 ₽</label>
+          <input type="number" id="count-night" name="count-night" min="0" max="10" value="0" />
 
-          <label>
-            <input type="checkbox" name="ticket-sharks" />
-            Кормление акул — 1000 ₽
-          </label>
-          <label>
-            Кол-во:
-            <input type="number" name="count-sharks" min="1" max="10" value="1" />
-          </label><br>
+          <label for="count-sharks">Кормление акул — 1000 ₽</label>
+          <input type="number" id="count-sharks" name="count-sharks" min="0" max="10" value="0" />
 
-          <label>
-            <input type="checkbox" name="ticket-kids" />
-            Детская экскурсия — 600 ₽
-          </label>
-          <label>
-            Кол-во:
-            <input type="number" name="count-kids" min="1" max="10" value="1" />
-          </label><br>
+          <label for="count-kids">Детская экскурсия — 600 ₽</label>
+          <input type="number" id="count-kids" name="count-kids" min="0" max="10" value="0" />
         </fieldset>
 
         <label for="date">Дата посещения:</label>
-        <input type="date" id="date" name="date" class="ticket-form__input" required /><br>
+        <input type="date" id="date" name="date" class="ticket-form__input" required />
 
         <button type="submit" class="button ticket-form__button">Оформить заказ</button>
       </form>
     </div>
   </section>
 </main>
+
 
 
   <footer class="footer">
