@@ -309,25 +309,6 @@ img {
 
 .ticket_section {
   padding: 2em 1em;
-  position: relative;
-  background: url('background_ticket.gif') no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.ticket_section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.3); 
-  z-index: 1;
-}
-
-.ticket_section .container {
-  position: relative;
-  z-index: 2;
-  color: white;
 }
 
 .ticket_section__title {
