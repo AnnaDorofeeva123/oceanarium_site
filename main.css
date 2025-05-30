@@ -132,15 +132,14 @@ img {
   margin: 0 auto;
   font-size: 1.1em;
 }
-
-.exhibits__list {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
 
-.exhibit {
+.card {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
@@ -149,77 +148,35 @@ img {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  
 }
 
-.exhibit:hover {
+.card:hover {
   transform: translateY(-5px);
 }
 
-.exhibit__img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.exhibit__title {
-  font-size: 1.2em;
-  margin: 10px 15px;
-  color: #022e40;
-}
-
-.exhibit__desc {
-  padding: 0 15px 20px;
-  font-size: 0.95em;
-  color: #04445e;
-}
-
-.events__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.event-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 330px;
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.event-card:hover {
-  transform: translateY(-5px);
-}
-
-.event-card__img {
+.card__img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.event-card__content {
+.card__content {
   padding: 15px;
 }
 
-.event-card__title {
+.card__title {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #022e40;
 }
 
-.event-card__desc {
+.card__desc {
   font-size: 0.95em;
   color: #555;
   margin-bottom: 10px;
 }
 
-.card-button {
+.card__btn {
   display: inline-block;
   background-color: #00b4d8;
   color: white;
@@ -230,7 +187,7 @@ img {
   transition: background 0.3s;
 }
 
-.card-button:hover {
+.card__btn:hover {
   background-color: #0077b6;
 }
 
