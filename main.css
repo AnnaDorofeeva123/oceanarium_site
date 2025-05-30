@@ -220,19 +220,18 @@ img {
 }
 
 .card-button {
-    margin-top: 16px;
-    align-self: flex-start; 
-    padding: 8px 16px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #00b4d8;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
 .card-button:hover {
-    background-color: #005fa3;
+  background-color: #0077b6;
 }
 
 
