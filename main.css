@@ -573,12 +573,11 @@ img {
 @media (max-width: 768px) {
   .header {
     position: static; /* больше не фиксируем шапку */
-    box-shadow: none; /* по желанию, убрать тень */
   }
 
   .header__container {
     flex-direction: column; /* чтобы вертикально размещать элементы */
-    align-items: flex-start; /* выравнивание по левому краю */
+    align-items: flex-center; /* выравнивание по левому краю */
     gap: 15px;
     padding: 10px 0;
   }
@@ -596,9 +595,7 @@ img {
   }
 
   .hero {
-    background-size: contain; /* или можно попробовать cover, но с меньшим масштабом */
-    background-position: center top; /* чтобы сфокусироваться на верхней части */
-    height: 60vh; /* чуть меньше высоты на телефоне */
+    background-position: center center;
   }
 
   .card__list {
@@ -607,9 +604,9 @@ img {
   }
   
   .animal-card {
-    flex-shrink: 0;
-    width: 90%;       /* занимают почти всю ширину экрана */
-    max-width: 300px; /* но не шире 300px */
+    min-width: auto;          /* убираем ограничение */
+    width: 80%;               /* задаём ширину в процентах */
+    max-width: none; 
   }
 
   .animal_block {
