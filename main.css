@@ -569,13 +569,13 @@ img {
 
 
 @media (max-width: 768px) {
-  .header {
+   .header {
     position: static; /* больше не фиксируем шапку */
   }
 
   .header__container {
     flex-direction: column; /* чтобы вертикально размещать элементы */
-    align-items: center; /* выравнивание по левому краю */
+    align-items: center; /* выравнивание по центру */
     gap: 15px;
     padding: 10px 0;
   }
@@ -583,13 +583,14 @@ img {
   .nav__list {
     flex-direction: column; /* ссылки в столбик */
     gap: 10px;
-    width: 100%; /* чтобы список занял всю ширину */
+    width: auto; /* не растягиваем на всю ширину */
   }
 
   .nav__link {
-    width: 100%; /* ссылки занимают всю ширину контейнера */
+    width: auto; /* не растягиваем на всю ширину */
     padding: 8px 0;
-    border-bottom: 1px solid #ddd; /* разделитель между ссылками */
+    text-align: center; /* выравнивание текста по центру */
+    text-decoration: none; /* убираем подчеркивание */
   }
 
   .hero {
