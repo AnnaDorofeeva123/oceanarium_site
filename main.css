@@ -566,3 +566,35 @@ img {
 .footer__link:hover {
   color: white;
 }
+
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .card__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animal_block {
+    flex-direction: column !important;
+  }
+
+  .intro__container {
+    flex-direction: column;
+  }
+}
+
