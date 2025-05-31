@@ -571,9 +571,28 @@ img {
 
 
 @media (max-width: 768px) {
+  .header {
+    position: static; /* больше не фиксируем шапку */
+    box-shadow: none; /* по желанию, убрать тень */
+  }
+
   .header__container {
-    flex-direction: column;
+    flex-direction: column; /* чтобы вертикально размещать элементы */
+    align-items: flex-start; /* выравнивание по левому краю */
     gap: 15px;
+    padding: 10px 0;
+  }
+
+  .nav__list {
+    flex-direction: column; /* ссылки в столбик */
+    gap: 10px;
+    width: 100%; /* чтобы список занял всю ширину */
+  }
+
+  .nav__link {
+    width: 100%; /* ссылки занимают всю ширину контейнера */
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd; /* разделитель между ссылками */
   }
 
   .hero {
@@ -585,6 +604,12 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  
+  .animal-card {
+    flex-shrink: 0;
+    width: 90%;       /* занимают почти всю ширину экрана */
+    max-width: 300px; /* но не шире 300px */
+  }
 
   .animal_block {
     flex-direction: column !important;
@@ -594,32 +619,6 @@ img {
     flex-direction: column;
   }
 
-  /* Компактный хедер в одну строку */
-  .header__container {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-  }
-
-  .header__logo {
-    height: 40px; /* чуть меньше логотип */
-  }
-
-  .nav__list {
-    display: flex !important;
-    gap: 12px;
-  }
-
-  .nav__link {
-    font-size: 0.9em;
-  }
-
-  .header__button {
-    padding: 6px 12px;
-    font-size: 0.85em;
-  }
 }
 
 
