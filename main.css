@@ -478,38 +478,73 @@ img {
 
 .slide {
   min-width: 100%;
-  transition: opacity 0.5s ease-in-out;
+  tran.event_slider {
+  background-color: #0c1b2a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.css-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.css-slider input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .slide img {
   width: 100%;
   display: block;
   border-radius: 16px;
-  object-fit: cover;
-  height: 400px;
+  filter: brightness(0.9) contrast(1.1);
 }
 
-/* Навигация слайдера */
-.slider-buttons {
+.navigation {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  gap: 10px;
+  margin-top: 20px;
+  gap: 12px;
 }
 
-.slider-button {
-  width: 12px;
-  height: 12px;
+.bar {
+  width: 14px;
+  height: 14px;
+  background: #455d77;
   border-radius: 50%;
-  background-color: #aaa;
-  border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s ease;
 }
 
-.slider-button.active,
-.slider-button:hover {
-  background-color: #0077aa;
+.bar:hover,
+input:checked + .slides + .navigation .bar:hover {
+  background: #66ccff;
+}
+
+/* Slide switching logic */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
 }
 
 .event_content h2 {
