@@ -574,11 +574,6 @@ img {
     gap: 15px;
   }
 
-  .nav__list {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .hero {
     height: auto;
     padding: 40px 20px;
@@ -596,5 +591,51 @@ img {
   .intro__container {
     flex-direction: column;
   }
+
+  .animals__scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+    padding-bottom: 10px;
+    gap: 15px;
+  }
+
+  .animal-card {
+    min-width: 180px; /* чуть меньше ширина для удобства прокрутки */
+    flex-shrink: 0;
+  }
+
+  /* Уменьшаем высоту изображений, чтобы не занимали слишком много места */
+  .animal-card__img {
+    height: 140px;
+    object-fit: cover;
+  }
+
+  /* Компактный хедер в одну строку */
+  .header__container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .header__logo {
+    height: 40px; /* чуть меньше логотип */
+  }
+
+  .nav__list {
+    display: flex !important;
+    gap: 12px;
+  }
+
+  .nav__link {
+    font-size: 0.9em;
+  }
+
+  .header__button {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
 }
+
 
