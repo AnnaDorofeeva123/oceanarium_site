@@ -400,39 +400,8 @@ img {
   line-height: 1.4;
 }
 
-
-.an_intro {
-  background: url('an_intro_background.jpg') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.an_intro::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.an_intro_content {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-  padding: 20px;
-}
-
-.an_intro_content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.an_intro_content p {
-  font-size: 1.2rem;
+.hero_animals {
+  background-image: url('animals_banner.jpg'); /* новый фон только для страницы обитателей */
 }
 
 .animals {
