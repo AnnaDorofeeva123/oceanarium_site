@@ -462,6 +462,37 @@ img {
   line-height: 1.7;
 }
 
+.event_photo {
+  background-color: #0d1b2a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.event_photo h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.event_photo__wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.event_photo__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.event_photo__image:hover {
+  transform: scale(1.02);
+}
+
 .event_content h2 {
   font-size: 1.8em;
   color: #0077aa;
