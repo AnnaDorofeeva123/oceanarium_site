@@ -575,7 +575,7 @@ img {
 
   .header__container {
     flex-direction: column; /* чтобы вертикально размещать элементы */
-    align-items: flex-center; /* выравнивание по левому краю */
+    align-items: center; /* выравнивание по левому краю */
     gap: 15px;
     padding: 10px 0;
   }
