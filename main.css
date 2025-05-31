@@ -450,11 +450,6 @@ img {
   margin: 0 auto;
 }
 
-.event_intro_icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
 .event_intro_title {
   font-size: 2.4em;
   color: #003566;
@@ -465,6 +460,56 @@ img {
   font-size: 1.1em;
   color: #444;
   line-height: 1.7;
+}
+
+/* Слайдер */
+.slider {
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  height: 400px;
+}
+
+/* Навигация слайдера */
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.slider-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #aaa;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-button.active,
+.slider-button:hover {
+  background-color: #0077aa;
 }
 
 .event_content h2 {
