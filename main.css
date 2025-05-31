@@ -571,15 +571,6 @@ input:checked + .slides + .navigation .bar:hover {
   font-weight: 500;
 }
 
-a {
-  color: #0077aa;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .reviews {
   margin-top: 30px;
   display: grid;
