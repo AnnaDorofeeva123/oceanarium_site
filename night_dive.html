@@ -35,12 +35,28 @@
     </div>
   </section>
 
-  <section class="event_slider">
-    <div class="slider_container">
-      <div class="slider">
-        <img src="night1.jpg" alt="Зал с подсветкой" class="slider__img">
-        <img src="night2.jpg" alt="Ночные медузы" class="slider__img">
-        <img src="night3.jpg" alt="Проекция звёзд" class="slider__img">
+   <section class="event_slider">
+    <div class="css-slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+  
+      <div class="slides">
+        <div class="slide s1">
+          <img src="night1.jpg" alt="Аквариум ночью">
+        </div>
+        <div class="slide s2">
+          <img src="night2.jpg" alt="Медузы в подсветке">
+        </div>
+        <div class="slide s3">
+          <img src="night3.jpg" alt="Подводная проекция звёзд">
+        </div>
+      </div>
+  
+      <div class="navigation">
+        <label for="slide1" class="bar"></label>
+        <label for="slide2" class="bar"></label>
+        <label for="slide3" class="bar"></label>
       </div>
     </div>
   </section>
