@@ -467,6 +467,71 @@ img {
   line-height: 1.7;
 }
 
+.event_content h2 {
+  font-size: 1.8em;
+  color: #0077aa;
+  margin-top: 40px;
+}
+
+.event_content p {
+  margin-bottom: 20px;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.highlights li {
+  background: #e6f4fa;
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+a {
+  color: #0077aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.reviews {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.review {
+  background-color: #ffffff;
+  border-left: 5px solid #0077aa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.review__text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review__author {
+  text-align: right;
+  font-weight: bold;
+  color: #444;
+}
+
+.footer {
+  background-color: #003d5c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 
 .footer {
   background-color: #022e40;
