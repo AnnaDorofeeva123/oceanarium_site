@@ -209,8 +209,10 @@ img {
 
 .animal-card {
   text-align: center;
-  min-width: 200px;
   flex-shrink: 0;
+  flex-basis: 30%;   /* базовая ширина */
+  max-width: 300px;  /* максимум */
+  width: 100%;
   scroll-snap-align: start;
   background-color: white;
   border-radius: 10px;
@@ -590,24 +592,6 @@ img {
 
   .intro__container {
     flex-direction: column;
-  }
-
-  .animals__scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
-    padding-bottom: 10px;
-    gap: 15px;
-  }
-
-  .animal-card {
-    min-width: 180px; /* чуть меньше ширина для удобства прокрутки */
-    flex-shrink: 0;
-  }
-
-  /* Уменьшаем высоту изображений, чтобы не занимали слишком много места */
-  .animal-card__img {
-    height: 140px;
-    object-fit: cover;
   }
 
   /* Компактный хедер в одну строку */
