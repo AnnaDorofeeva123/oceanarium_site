@@ -468,12 +468,6 @@ img {
   text-align: center;
 }
 
-.event_photo h2 {
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-size: 1.8em;
-}
-
 .event_photo__wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -539,7 +533,7 @@ img {
 .review__author {
   text-align: right;
   font-weight: bold;
-  color: #444;
+  color: #022e40;
 }
 
 .footer {
