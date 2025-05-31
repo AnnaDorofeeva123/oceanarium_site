@@ -209,10 +209,8 @@ img {
 
 .animal-card {
   text-align: center;
+  min-width: 200px;
   flex-shrink: 0;
-  flex-basis: 30%;   /* базовая ширина */
-  max-width: 300px;  /* максимум */
-  width: 100%;
   scroll-snap-align: start;
   background-color: white;
   border-radius: 10px;
