@@ -596,8 +596,9 @@ img {
   }
 
   .hero {
-    height: auto;
-    padding: 40px 20px;
+    background-size: contain; /* или можно попробовать cover, но с меньшим масштабом */
+    background-position: center top; /* чтобы сфокусироваться на верхней части */
+    height: 60vh; /* чуть меньше высоты на телефоне */
   }
 
   .card__list {
