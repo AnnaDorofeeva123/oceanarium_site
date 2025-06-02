@@ -185,6 +185,17 @@ img {
   margin-top: 30px; 
 }
 
+.animal-card {
+  text-align: center;
+  min-width: 200px; 
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 10px; /
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .animal-card__img {
   width: 100%;
   height: 180px; 
@@ -205,17 +216,6 @@ img {
   padding-bottom: 10px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-}
-
-.animal-card {
-  text-align: center;
-  min-width: 200px; 
-  flex-shrink: 0;
-  scroll-snap-align: start;
-  background-color: white;
-  border-radius: 10px; /
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .animals__scroll::-webkit-scrollbar {
@@ -255,14 +255,14 @@ img {
   margin-bottom: 10px; 
 }
 
-.ticket_section {
-  padding: 2em 1em; /* px */
+.ticket-section {
+  padding: 40px 20px; /* px */
 }
 
-.ticket_section__title {
+.ticket-section__title {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 2em; /* px */
+  margin-bottom: 40px; /* px */
 }
 
 .ticket-form {
@@ -278,7 +278,7 @@ img {
 
 .ticket-form__input,
 .ticket-form__select {
-  padding: 0.5em; /* px */
+  padding: 10px; /* px */
   font-size: 1em;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -287,7 +287,7 @@ img {
 .ticket-form__button {
   background-color: #00b4d8;
   color: white;
-  padding: 0.7em 1.5em; /* px */
+  padding: 15px 30px; /* px */
   font-size: 1em;
   border: none;
   border-radius: 4px;
@@ -316,51 +316,45 @@ img {
   padding: 5px;
 }
 
-.intro {
+.exhibit-intro {
   background: #d7f4f7;
   padding: 60px 0; 
 }
 
-.intro__container {
+.exhibit-intro__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px; 
 }
 
-.intro__text {
+.exhibit-intro__text {
   flex: 1;
   min-width: 280px; 
 }
 
-.intro__text h1 {
+.exhibit-intro__text h1 {
   font-size: 36px; 
   margin-bottom: 10px;
 }
 
-.intro__text p {
+.exhibit-intro__text p {
   font-size: 18px; 
   margin-bottom: 15px; 
   line-height: 1.6;
 }
 
-.intro__image img {
+.exhibit-intro__image img {
   max-width: 400px; 
   border-radius: 16px; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Секции */
-.section {
-  padding: 60px 0;
-}
-
-.description p {
+.exhibit-description p {
   font-size: 18px; 
   line-height: 1.6;
 }
 
-/* Галерея */
 .gallery {
   margin-top: 30px; 
   display: flex;
@@ -381,7 +375,6 @@ img {
   transform: scale(1.05);
 }
 
-/* Факты в карточках */
 .fact-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -399,17 +392,17 @@ img {
   line-height: 1.4;
 }
 
-.hero_animals {
+.animals-hero {
   background-image: url('animals_banner.jpg'); 
 }
 
-.animals {
+.animal {
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
-.animal_block {
+.animal__block {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
@@ -417,57 +410,57 @@ img {
   flex-wrap: wrap;
 }
 
-.animal_block.reverse {
+.animal__block.reverse {
   flex-direction: row-reverse;
 }
 
-.animal_block img {
+.animal__block img {
   width: 100%;
   max-width: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.animal_block .text {
+.animal__block .text {
   flex: 1;
 }
 
-.animal_block h2 {
+.animal__block h2 {
   font-size: 1.8rem;
   color: #0077aa;
   margin-bottom: 10px;
 }
 
-.event_intro {
+.event__intro {
   background-color: #eef6f9;
   padding: 80px 20px;
   text-align: center;
 }
 
-.event_intro_content {
+.event__intro__content {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.event_intro_title {
+.event__intro__title {
   font-size: 2.4em;
   color: #003566;
   margin-bottom: 15px;
 }
 
-.event_intro_text {
+.event__intro__text {
   font-size: 1.1em;
   color: #444;
   line-height: 1.7;
 }
 
-.event_photo {
+.event__photo {
   background-color: #022e40;
   padding: 60px 20px;
   text-align: center;
 }
 
-.event_photo__wrapper {
+.event__photo__wrapper {
   max-width: 1000px;
   margin: 0 auto;
   border-radius: 16px;
@@ -475,7 +468,7 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
-.event_photo__image {
+.event__photo__image {
   width: 100%;
   height: auto;
   display: block;
