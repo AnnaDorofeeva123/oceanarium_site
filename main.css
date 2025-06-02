@@ -564,9 +564,11 @@ img {
   }
 
   .nav__list {
+    display: flex;
     flex-direction: column; 
     gap: 10px;
     width: auto; 
+    align-items: center;
   }
 
   .nav__link {
