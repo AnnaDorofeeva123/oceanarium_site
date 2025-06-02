@@ -437,30 +437,30 @@ img {
   text-align: center;
 }
 
-.event__intro__content {
+.event-intro__content {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.event__intro__title {
+.event-intro__title {
   font-size: 2.4em;
   color: #003566;
   margin-bottom: 15px;
 }
 
-.event__intro__text {
+.event-intro__text {
   font-size: 1.1em;
   color: #444;
   line-height: 1.7;
 }
 
-.event__photo {
+.event-photo {
   background-color: #022e40;
   padding: 60px 20px;
   text-align: center;
 }
 
-.event__photo__wrapper {
+.event-photo__wrapper {
   max-width: 1000px;
   margin: 0 auto;
   border-radius: 16px;
@@ -468,24 +468,24 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
-.event__photo__image {
+.event-photo__image {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
 }
 
-.event_photo__image:hover {
+.event-photo__image:hover {
   transform: scale(1.02);
 }
 
-.event_content h2 {
+.event-content h2 {
   font-size: 1.8em;
   color: #0077aa;
   margin-top: 40px;
 }
 
-.event_content p {
+.event-content p {
   margin-bottom: 20px;
 }
 
@@ -549,31 +549,30 @@ img {
 
 .footer__link:hover {
   color: white;
-
+}
 
 @media (max-width: 768px) {
    .header {
-    position: static; /* больше не фиксируем шапку */
+    position: static; 
   }
 
   .header__container {
-    flex-direction: column; /* чтобы вертикально размещать элементы */
-    align-items: center; /* выравнивание по центру */
+    flex-direction: column; 
+    align-items: center; 
     gap: 15px;
     padding: 10px 0;
   }
 
   .nav__list {
-    flex-direction: column; /* ссылки в столбик */
+    flex-direction: column; 
     gap: 10px;
-    width: auto; /* не растягиваем на всю ширину */
+    width: auto; 
   }
 
   .nav__link {
-    width: auto; /* не растягиваем на всю ширину */
+    width: auto; 
     padding: 8px 0;
-    text-align: center; /* выравнивание текста по центру */
-    text-decoration: none; /* убираем подчеркивание */
+    text-align: center; 
   }
 
   .hero {
@@ -586,16 +585,16 @@ img {
   }
   
   .animal-card {
-    min-width: auto;          /* убираем ограничение */
-    width: 60%;               /* задаём ширину в процентах */
+    min-width: auto;         
+    width: 60%;              
     max-width: none; 
   }
 
-  .animal_block {
+  .animal__block {
     flex-direction: column !important;
   }
 
-  .intro__container {
+  .event-intro__container {
     flex-direction: column;
   }
 }
