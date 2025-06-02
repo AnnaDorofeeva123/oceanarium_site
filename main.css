@@ -471,19 +471,16 @@ img {
   text-align: center;
 }
 
-.event-photo__wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-}
-
 .event-photo__image {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
+
 }
 
 .event-photo__image:hover {
