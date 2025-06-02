@@ -191,7 +191,7 @@ img {
   flex-shrink: 0;
   scroll-snap-align: start;
   background-color: white;
-  border-radius: 10px; /
+  border-radius: 10px; 
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -274,6 +274,7 @@ img {
   text-align: center;
   font-size: 2em;
   margin-bottom: 40px; 
+}  
 
 .ticket-form {
   display: grid;
@@ -598,8 +599,8 @@ img {
   
   .animal-card {
     min-width: auto;         
-    width: 60%;              
-    max-width: none; 
+    width: 100%;
+    max-width: 300px; 
   }
 
   .animal__block {
